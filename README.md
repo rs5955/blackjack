@@ -1,6 +1,6 @@
-# Raymond Shi
+# Blackjack Simulator
 
-Blackjack Simulator
+### Raymond Shi
 
 install dependencies:
 > npm install
