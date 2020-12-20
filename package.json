@@ -1,0 +1,27 @@
+{
+  "name": "rs5955-homework06",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-034-fall-2020/rs5955-homework06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-034-fall-2020/rs5955-homework06/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-034-fall-2020/rs5955-homework06#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14"
+  },
+  "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-plugin-mocha": "^8.0.0"
+  }
+}

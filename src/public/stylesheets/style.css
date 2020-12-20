@@ -1,0 +1,249 @@
+* {
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+body {
+    background-color: lightsteelblue;/ overflow: hidden;
+}
+
+#start {
+    border-radius: 5px;
+    /*border: 1px solid black;*/
+    box-shadow: 2px 2px 5px orange;
+    background-color: powderblue;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /*https://www.w3.org/Style/Examples/007/center.en.html*/
+}
+
+input[type="text"] {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+input[type="submit"] {
+    background-color: lightgray;
+    border: 2px solid lightcyan;
+    padding: 5px;
+}
+
+input[type="submit"]:active {
+    background-color: darkgray;
+}
+
+/*save to database elements*/
+#saveForm {
+    text-align: center;
+}
+
+#saveMsg {
+    border: 2px solid orange;
+    text-align: center;
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    background-color: lightyellow;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #ace5ee;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(2) {
+    background-color: #32bfd5;
+}
+
+th {
+    background-color: #a4dded;
+}
+
+td,
+th {
+    border: 2px solid #68d0e0;
+    padding: 5px;
+    text-align: center;
+}
+
+/*game display*/
+.game {
+    position: relative;
+}
+
+/*computer side*/
+#compBoard {
+    background-color: palevioletred;
+    border: 2px solid red;
+    height: 30vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#compLabel {
+    border: 2px solid orange;
+    background-color: lightgoldenrodyellow;
+    display: inline-block;
+    padding: 20px;
+}
+
+#compHand {
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -30%);
+}
+
+/*player side*/
+#playerBoard {
+    background-color: darkseagreen;
+    border: 2px solid green;
+    height: 30vh;
+    width: 80vw;
+    margin: auto;
+    position: relative;
+}
+
+#playerLabel {
+    border: 2px solid orange;
+    background-color: lightgoldenrodyellow;
+    display: inline-block;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#playerHand {
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -30%);
+}
+
+/*Card Styles*/
+#cardBack {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    height: 150px;
+    width: 100px;
+    background-image: url('../images/cardBG.jpg');
+    background-size: contain;
+    display: inline-block;
+    position: relative;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+}
+
+.card:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.cardInfoL {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.cardInfoR {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.redTxt {
+    color: red;
+}
+
+/*Button Styles*/
+#buttons {
+    margin: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#hit {
+    float: left;
+}
+
+#stand {
+    float: left;
+    margin-left: 20px;
+}
+
+#hit,
+#stand,
+#restart,
+#saveBtn {
+    padding: 10px;
+    background-color: lightgray;
+    box-shadow: 3px 2px 2px black;
+    border: 2px solid lightcyan;
+}
+
+#hit:active,
+#stand:active,
+#restart:active,
+#saveBtn:active {
+    background-color: darkgray;
+}
+
+#end {
+    margin: 20px;
+    text-align: center;
+}
+
+#restart {
+    margin-left: 20px;
+}
+
+#saveBtn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/*Winner Div*/
+#winnerDiv {
+    border: 1px solid purple;
+    background-color: #b19cd9;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+}
