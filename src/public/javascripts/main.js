@@ -1,6 +1,5 @@
 /*
-Raymond Shi (rs5955)
-Assignment 6 - One Hand of Blackjack
+Raymond Shi
 */
 
 //------Card class------
@@ -319,7 +318,7 @@ function endGame(player, computer, deck) {
   const saveForm = document.createElement('form');
   saveForm.id = 'saveForm';
 
-  //Initials: 
+  //Initials:
   const initialLabel = document.createElement('label');
   initialLabel.setAttribute('for', 'initials');
   initialLabel.appendChild(document.createTextNode('Initials: '));
@@ -348,7 +347,7 @@ function endGame(player, computer, deck) {
 function display(computer, player) {
   const gameSelect = document.querySelector('.game');
   //computer objects
-  //create board, and add label, hand, cards, 
+  //create board, and add label, hand, cards,
   const compBoard = document.createElement('div'); //green bg
   compBoard.id = 'compBoard';
   const compHand = document.createElement('div'); //purple bg
