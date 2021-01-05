@@ -16,7 +16,6 @@ class Deck {
       //shuffle deck
       this.shuffle();
     }
-    //run durstenfeld shuffle: https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm
     shuffle() {
       for (let i = this.size() - 1; i > 0; i--) { //from n-1 -> 1
         const j = Math.floor(Math.random() * (i + 1)); //j: 0<=j<=i
