@@ -9,7 +9,7 @@ const Result = new mongoose.Schema({
 
 mongoose.model('Result',Result);
 
-// is the environment variable, NODE_ENV, set to PRODUCTION? 
+// is the environment variable, NODE_ENV, set to PRODUCTION?
 let dbconf;
 if (process.env.NODE_ENV === 'PRODUCTION') {
   // if we're in PRODUCTION mode, then read the configration from a file
@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
   dbconf = conf.dbconf;
 } else {
   // if we're not in PRODUCTION mode, then use
-  dbconf = 'mongodb://localhost/hw06';
+  dbconf = 'mongodb://localhost/blackjack';
 }
 
 mongoose.connect(dbconf,{useNewUrlParser: true, useUnifiedTopology: true});
